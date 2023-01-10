@@ -1,0 +1,13 @@
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  
+}
+
+#elemento-1{
+  color: red;
+}
+
+ul #elemento-1{
+  font-size: 2rem;
+}
