@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.titulo1 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: italic;
+}
+.contenedor-titulo{
+    width: 100vw;
+    background-color: rgb(144, 29, 29);
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px;
+}
+.galeria {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: inherit;
+  gap: 15px;
+  background-color: rgb(118, 57, 57);
+  padding: 20px;
+}
+
+.img-galeria {
+  width: 300px;
+  border-radius: 7.5px;
+  border: 1px solid black;
+}
+
+.img-galeria {
+  opacity: 0.7;
+}
+
+.img-galeria:hover {
+  opacity: 1;
+  cursor: pointer;
+}
