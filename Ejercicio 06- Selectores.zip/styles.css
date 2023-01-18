@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.contenedor-titulo {
+  padding: 5px;
+  color: rgb(228, 88, 88);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  border: 0.1rem solid black;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  text-shadow: 0.1rem 0.1rem 0.1rem #333;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 5px;
+  background-color: darkslategray;
+}
+
+.boton {
+  padding: 2.5rem 7rem;
+  background-color: whitesmoke;
+  border: 0.1rem solid black;
+  cursor: pointer;
+  position: relative;
+  border-radius: 0.3rem;
+  overflow: hidden;
+}
+
+.boton::before {
+  content: "PASA POR ENCIMA DE MI";
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: darkseagreen;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-shadow: 0.1rem 0.1rem 0.1rem #333;
+  transition: 0.2s ease;
+}
+
+.boton:hover {
+  background-color: green;
+}
+
+.boton::after {
+  content: "HECHO";
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: darkseagreen;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-shadow: 0.1rem 0.1rem 0.1rem #333;
+  transition: 0.2s ease;
+  opacity: 0;
+}
+
+.boton:hover::before {
+  transform: translate(-50%, -50%) scale(3);
+  opacity: 0;
+}
+
+.boton:hover::after {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  color: white;
+  background-color: green;
+}
