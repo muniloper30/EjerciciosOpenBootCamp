@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elementos de Interés en Bootstrap</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container py-4 col-md-7">
+      <div class="bg-light p-5 rounded-3">
+        <div class="container-fluid">
+          <h1 class="fw-bold display-5">Este es mi Jumbotron</h1>
+          <p class="col-md-8 fs-4">
+            Ahora estoy estudiando HTML y CSS en este maravilloso Bootcamp
+            gracias a una serie de utilidades además de las explicaciones de los
+            profesores !!
+          </p>
+          <button
+            class="btn btn-primary btn-lg"
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#modal-muni"
+          >
+            ¡¡PÚLSAME!!
+          </button>
+          <div
+            class="modal fade static"
+            data-bs-backdrop="static"
+            id="modal-muni"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header h4">
+                  Al pulsar visualizas este super titular
+                </div>
+                <div class="modal-body">
+                  En esta parte tenemos el cuerpo de nuestro super modal
+                </div>
+                <div class="modal-footer">
+                  Gracias por pulsar !!<button
+                    class="btn btn-outline-primary m-4"
+                    data-bs-dismiss="modal"
+                  >
+                    Cerrar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <form action="">
+        <div class="mb-3">
+          <label for="username" class="form-label px-1 fw-bold">Username</label>
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              class="form-control text-bg-light p-3"
+              placeholder="Nombre de usuario"
+              aria-label="Recipient's username"
+              aria-describedby="basic-addon2"
+            />
+            <span class="input-group-text" id="basic-addon2">@ejemplo.com</span>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="number" class="form-label px-1 fw-bold">Phone</label>
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon2">+34</span>
+            <input
+              type="number"
+              class="form-control text-bg-light p-2"
+              placeholder="666777444"
+              aria-label="Recipient's username"
+              aria-describedby="basic-addon2"
+            />
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="textarea" class="form-label px-1 fw-bold" >Mensaje</label>
+          <div class="input-group mb-3">
+            <textarea
+              type="textarea"
+              class="form-control text-bg-light p-3"
+              placeholder="¡¡ Cuéntame algo !!"
+              aria-label="Recipient's username"
+              aria-describedby="basic-addon2"
+              rows="5"
+            ></textarea>
+          </div>
+        </div>
+      </form>
+      <div class="card" style="width: 18rem;">
+        <img src="/Ejercicio 12-Elementos de interés en Bootstrap.zip/imagenes/muniAnime.JPG" alt="img-muni">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Victor Lorencio</h5>
+          <p class="card-text">Mi nombre es Victor y estoy empezando a crear mis propios proyectos de desarrollo web. Estoy entusiasmado con la idea de convertirme en programador y estoy dedicando todo el tiempo posible en mejorar mis habilidades</p>
+          <p class="card-text">Deseo aprender front-end con Javascript y reactjs</p>
+          <div class="card-footer text-bg-dark ">
+            victorlorencio@gmail.com
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</html>
